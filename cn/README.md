@@ -1,6 +1,103 @@
 ## `bitCheck`使用说明
 
-### 如果您使用手机
+## 1 准备工作
+### 1.1 如果您使用手机
+
+#### 第一步：下载手机钱包
+如果您手机里尚未有支持以太坊（或波场）的钱包，请先安装钱包应用，可以选择以下几款钱包应用：
+
+* imToken：[打开下载链接](https://www.token.im/)
+* BitKeep：[打开下载链接](https://bitkeep.com)
+* metamask（手机版，仅用于以太坊版）：[打开Google Play下载链接](https://play.google.com/store/apps/details?id=io.metamask)。
+
+  对于安卓用户，如果不方便访问`Google Play`，[点击这里下载](http://eth.bitcheck.app/download/metamask_1.0.4.apk)
+
+#### 第二步：新建或导入账户
+请网上找相关教程。
+
+#### 第三步：在钱包中打开`bitCheck`链接：
+* 以太坊版：请复制链接 https://eth.bitcheck.app 到钱包DAPP页面中打开，或在钱包中搜索：`bitcheck`
+
+* 波场版：请复制链接 https://tron.bitcheck.app 到钱包DAPP页面中打开，或在钱包中搜索：`bitcheck`
 
 
-### 如果您使用桌面电脑
+### 1.2 如果您使用桌面电脑
+#### 1.2.1 
+如果使用以太坊版，需要在浏览器中安装`metamask`钱包插件，请打开[打开Google应用商店下载](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn)
+
+或者访问`metamask`官网 https://metamask.io
+
+如果不方便访问`Google Chrome web store`的话，打开 https://crxdl.com，输入`metamask`的ID: `nkbihfbeogaeaoehlefnkodbefgpgknn`，即可下载`crx`插件。
+
+#### 1.2.2
+如果使用波场版，需要在浏览器中安装`TronLink`（波宝钱包）插件，请[打开Google应用商店下载](https://chrome.google.com/webstore/detail/tronlink（波宝钱包）/ibnejdfjmmkpcnlpebklmnkoeoihofec)
+
+如果不方便访问`Google Chrome web store`的话，打开 https://crxdl.com，输入`TronLink`的ID: `ibnejdfjmmkpcnlpebklmnkoeoihofec`，即可下载`crx`插件。
+
+#### 1.2.3 插件安装
+`CRX`钱包插件下载成功后，拖入浏览器中，即可自动安装。
+
+#### 1.2.4 钱包使用
+请网上找相关教程。
+
+## 2 正式使用
+
+### 2.0 授权
+第一次使用，需要针对操作的币种，如`USDT`进行授权，如下图：
+[授权页面](https://tva1.sinaimg.cn/large/0081Kckwgy1gk0e9km3gpj30ks11049r.jpg)
+
+### 2.1 付款
+按要求填入收款人账户地址，付款金额，生效时间，点击付款按钮。
+[付款页面](https://tva1.sinaimg.cn/large/0081Kckwgy1gk0ebscaxnj30ks192wlf.jpg)
+
+然后会提示复制凭证，点击复制按钮后，再点击继续，会弹出钱包的签名界面，输入钱包密码，即可发送交易。如下图：
+[确认并复制凭证](https://tva1.sinaimg.cn/large/0081Kckwgy1gk0eeylitoj30jw0nsacp.jpg)
+
+将复制好的凭证发给收款人。
+
+### 2.2 收款
+`收款人`收到付款人发来的凭证后，将凭证复制到`凭证管理`输入框中，app会自动识别，并显示凭证内容。
+[查看收款截图](https://tva1.sinaimg.cn/large/0081Kckwgy1gk0eqa75nlj30ks194qau.jpg)
+
+请仔细阅读以下内容：
+> 凭证是收款的`唯一证据`，请妥善保管！
+> 
+> `bitCheck`是区块链应用，没有服务器为您保存该凭证，凭证只会保存在您自己的设备上，请确保用一台安全的手机或电脑操作。
+> 
+> 如果需要更换设备，请务必在`我的钱包`中，将未提现的凭证复制`导出`并`导入`到新设备。
+
+### 2.3 提前放款
+对于远期生效的担保支付凭证，`付款人`在`凭证管理`页，如收款操作一样，将凭证复制到输入框中，会看到`调整为立即生效`选项以及按钮。
+
+点击后，钱包会自动打开发送交易的确认界面，确认后，稍等区块链打包同步后，`收款人`可立即提现。[查看提前放款操作](https://tva1.sinaimg.cn/large/0081Kckwgy1gk0etxbuvfj30k20ge75h.jpg)
+
+
+### 2.4 退款
+`付款人`在`凭证管理`页，如收款操作一样，将凭证复制到输入框中，会看到`申请退款`选项与按钮。
+[如图](https://tva1.sinaimg.cn/large/0081Kckwgy1gk0f0lwt6dj30jq0i20u7.jpg)
+
+点击后，提示输入退款理由和退款金额（可以退一部分）[如图](https://tva1.sinaimg.cn/large/0081Kckwgy1gk0f1225urj30k20rsjt6.jpg)
+
+点击确认后，钱包自动打开发送交易的确认界面，确认后，稍等区块链打包同步后，`收款人`可看到退款申请。
+
+### 2.5 退款确认与拒绝
+`收款人`在`凭证管理`页，如收款操作一样，将凭证复制到输入框中，如果付款人已经对该笔款项发起退款申请，`收款人`点击`申请退款`选项后，会看到退款理由和金额。
+
+这时，`收款人`有两个选择：
+
+* 确认退款
+* 提交仲裁
+
+确认退款后，如果时间到期，`收款人`可以继续将未退款部分全部提现。
+
+提交仲裁后，在仲裁结果未决定之前，`付款人`仍旧可以操作`取消退款申请`，`收款人`也仍旧可以操作`确认退款`。
+
+### 2.6 取消退款申请
+`付款人`在申请`退款`后，经由与收款人协商，同意取消退款，则可以在`凭证管理`页，如收款操作一样，将凭证复制到输入框中，点击`处理退款`选项，可以看到`取消退款申请`按钮，点击并通过钱包成功发送交易后，该笔退款申请即被取消，`收款人`可正常收款。
+
+### 2.7 凭证管理
+所有发出和收到的凭证都能在`我的钱包`中看到，如下图：
+[我的钱包](https://tva1.sinaimg.cn/large/0081Kckwgy1gk0eiklhd7j30ks192q7p.jpg)
+
+每个凭证右边的按钮功能，如下图：[凭证管理功能](https://tva1.sinaimg.cn/large/0081Kckwgy1gk0ekbwkl8j30k00dmwgk.jpg)
+

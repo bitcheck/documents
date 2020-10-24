@@ -177,7 +177,7 @@
 |默认收取手续费地址|commonWithdrawAddress|对于未指定支付网关的支付，手续费打到这个账户|||
 |治理委员会地址|councilAddress|该地址交给Aragon配置的投票委员会决策|||
 
-### 7 BTCH基础价值
+## 7 BTCH基础价值
 BTCH的基础价值来源于其收入模型，BTCH有以下几部分收入：
 * 矿税
 * 交易手续费
@@ -219,4 +219,11 @@ BTCH的基础价值来源于其收入模型，BTCH有以下几部分收入：
 
 #### 7.5 币种定制
 对于需要在DAPP中增加`ERC20（TRC20）`代币的用户，收取`3000`个`BTCH`作为技术服务费用。
+
+## 8 挖矿收益预期
+友情提示：以下基于理论预期，不构成任何挖矿与投资建议。
+
+[不同时间差的挖矿收益比较](https://tva1.sinaimg.cn/large/0081Kckwgy1gk0dve04vgj31x8078dj4.jpg)
+
+[不同支付金额的挖矿收益比较](https://tva1.sinaimg.cn/large/0081Kckwgy1gk0dy5ll60j30u018wkjl.jpg)
 

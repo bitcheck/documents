@@ -16,7 +16,7 @@
 
 ### `bitCheck`如何收费？
 
-### 如何信任`bitCheck`的智能合约代码？
+### `bitCheck`安全吗？
 
 ### 如何参与`bitCheck`支付生态？
 

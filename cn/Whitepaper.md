@@ -129,3 +129,7 @@ Alice与bob在线上确定完成一个APP的开发业务，约定一个月时间
 
 #### 更多应用场景，等待您的发现
 
+### 3 系统功能逻辑图
+
+[功能逻辑图](https://tva1.sinaimg.cn/large/0081Kckwgy1gk0e3hdxxuj30z90u0436.jpg)
+
