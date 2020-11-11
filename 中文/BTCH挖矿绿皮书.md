@@ -178,23 +178,23 @@ function mint(address account, uint256 amount) public onlyAuthorizedContract {
 
 可调整的规则参数如下：
 
-|名称|合约参数|说明|以太坊数值|
-|:--|:--|:--|:--|
-|基础系数|baseFactor|见上|0.05|0.04|
+|名称|合约参数|说明|以太坊数值|TRON数值|
+|:--|:--|:--|:--|:--|
+|基础系数|baseFactor|见上|0.05|同以太坊|
 |时间差|intervalOfDepositWithdraw|见上|1, 24, 48, 96, 192, 384, 720小时|同以太坊|
 |时间差系数|intervalOfDepositWithdrawFactor|见上|0.05, 0.15, 0.168, 0.206, 0.286, 0.455, 0.815|同以太坊|
 |阶段系数|stageFactors|见上|10,5,2.5,1.25,0.625|同以太坊|
 |阶段金额|eachStageAmount|见上|7200000,7200000,7200000,7200000,7200000|同以太坊|
 |平滑指数|exponent|见上|2/3|同以太坊|
-|手续费率|feeRate|平滑指数后的手续费|33.333%|33.333%|
-|普通手续费额度|minChargeFeeAmount|为奖励小额支付，低于此额度享受普通手续费（与产矿最少支付额配合使用，低于此额度的没有挖矿，但可享受普通手续费）,如果超过，则先计算指数系数，然后按feeRate计算|10U|10U|
+|手续费率|feeRate|平滑指数后的手续费|33.333%|同以太坊|
+|普通手续费额度|minChargeFeeAmount|为奖励小额支付，低于此额度享受普通手续费（与产矿最少支付额配合使用，低于此额度的没有挖矿，但可享受普通手续费）,如果超过，则先计算指数系数，然后按feeRate计算|10U|10000000 U|
 |普通手续费最少费用|minChargeFee|普通情况下最少收的费用|0|0|
-|普通手续费比例|minChargeFeeRate|普通情况下的收费比例|1.8%|1.8%|
-|产矿最少交易额|minMintAmount|低于此额度，将不产矿|10U|10U|
-|矿税税率|taxRate||20%|20%|
-|仲裁固定费用|councilJudgementFee|提交仲裁委员会仲裁的最低收费|0|0|
-|仲裁比例费用|councilJudgementFeeRate|提交仲裁委员会仲裁的收费比例|17%|17%|
-|付款人挖矿奖励占比|depositerShareRate|即扣除矿税后，付款人获得的奖励比例，余下的给收款人|50%|50%|
+|普通手续费比例|minChargeFeeRate|普通情况下的收费比例|1.8%|1%|
+|产矿最少交易额|minMintAmount|低于此额度，将不产矿|10U|10000000 U|
+|矿税税率|taxRate||20%|同以太坊|
+|仲裁固定费用|councilJudgementFee|提交仲裁委员会仲裁的最低收费|0|同以太坊|
+|仲裁比例费用|councilJudgementFeeRate|提交仲裁委员会仲裁的收费比例|17%|同以太坊|
+|付款人挖矿奖励占比|depositerShareRate|即扣除矿税后，付款人获得的奖励比例，余下的给收款人|50%|同以太坊|
 |矿税收取地址|taxBereauAddress|即矿税将打入该地址|||
 |默认收取手续费地址|commonWithdrawAddress|对于未指定支付网关的支付，手续费打到这个账户|||
 |治理委员会地址|councilAddress|该地址交给Aragon配置的投票委员会决策|||
