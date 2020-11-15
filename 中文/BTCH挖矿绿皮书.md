@@ -134,13 +134,13 @@ function mint(address account, uint256 amount) public onlyAuthorizedContract {
    ```
 
    列表如下：
-   |阶段|支付总金额(USDT)|系数|
+   |阶段|代币发放总量(BTCH)|系数|
    |:-|:-|-:|
-   |1|7,200,000|10|
-   |2|7,200,000|5|
-   |3|7,200,000|2.5|
-   |4|7,200,000|1.25|
-   |5|7,200,000|0.625|
+   |1|0~7,200,000|10|
+   |2|7,200,000~14,400,000|5|
+   |3|14,400,000~21,600,000|2.5|
+   |4|21,600,000~28,800,000|1.25|
+   |5|28,800,000~36,600,000|0.625|
   
  * 5- Price elastical factor. We want the mint quantity for each deposit can be different under different market. If the price is higher than normal, the factor will become smaller automaticly, and if the price go down, the factor will become smaller also. It is a Gaussian distribution, and the average price (normal price) is fee of deposit and withdrawal.
    
