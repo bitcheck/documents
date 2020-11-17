@@ -46,7 +46,7 @@ function mint(address account, uint256 amount) public onlyAuthorizedContract {
 ### 仲裁委员代币：`ACT`
 每个被选出的仲裁委员拥有一个`NFT`（不可转让）代币，总量50枚，每个仲裁员一枚，用于对争议支付进行投票。仲裁委员资格被取消后，`NFT`自动失效。新增仲裁委员，持有新的`NFT`。
 
-仲裁委员代币名称：`ACT`（Arbitration Committee Member Token）
+仲裁委员代币名称：`ACT`（Arbitration Committee Token）
 
 此`NFT`仅用于争议仲裁投票，不能买卖，不能转让。
 
@@ -57,10 +57,10 @@ function mint(address account, uint256 amount) public onlyAuthorizedContract {
 
 每个纠纷会从`ACT`持有人中随机选出`5-7名`仲裁员，参与该案件的调查与仲裁。
 
-### 治理委员代币：`GCT`
+### 节点治理委员代币：`GCT`
 每位治理委员拥有一枚`GCT`（不可转让）代币，总量`21`枚，`GCT`持有人拥有以下权利：
 * 日常投票决策，通过率以具体提案为准。
-* 拥有`5倍`于常规挖矿的收益，但为了维护治理委员的可持续性与稳定性，挖出的`BTCH`将在180天内每日线性释放。
+* 拥有`10倍`于常规挖矿的收益。为维护治理委员的可持续性与稳定性，挖出的`BTCH`将在180天内每日线性释放。
 
 产生方式：由现任委员提名，并经全体治理委员`4/5`以上（含）赞成，或者占投票开始时刻`2/3`以上`BTCH`赞成后，产生新的委员。
 
@@ -68,9 +68,9 @@ function mint(address account, uint256 amount) public onlyAuthorizedContract {
 
 治理委员资格被取消后，`GCT`自动失效。新增的治理委员，持有新的`GCT`。
 
-治理委员代币名称：`GCT`（Govern Committee Member Token）
+治理委员代币名称：`GCT`（Govern Committee Token）
 
-`GCT`与治理委员不得超过`21名`。
+初期节点治理委员会无需持币，随着`BTCH`产量增加，经`BTCH`持有人投票，可增加对节点治理委员持币量的要求。
 
 
 ## 5 挖矿奖励算法
