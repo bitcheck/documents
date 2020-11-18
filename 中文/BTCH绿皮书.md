@@ -57,8 +57,8 @@ function mint(address account, uint256 amount) public onlyAuthorizedContract {
 
 每个纠纷会从`ACT`持有人中随机选出`5-7名`仲裁员，参与该案件的调查与仲裁。
 
-### 节点治理委员代币：`GCT`
-每位治理委员拥有一枚`GCT`（不可转让）代币，总量`21`枚，`GCT`持有人拥有以下权利：
+### 节点治理委员代币：`BCT`
+每位治理委员拥有一枚`BCT`（不可转让）代币，总量`21`枚，`BCT`持有人拥有以下权利：
 * 日常投票决策，通过率以具体提案为准。
 * 拥有`10倍`于常规挖矿的收益。为维护治理委员的可持续性与稳定性，挖出的`BTCH`将在180天内每日线性释放。
 
@@ -66,9 +66,9 @@ function mint(address account, uint256 amount) public onlyAuthorizedContract {
 
 罢免方式：任何`BTCH`持有人都可提出罢免提案，经全体治理委员`4/5`以上赞成，或者占投票开始时刻`2/3`以上`BTCH`赞成，罢免提案生效。
 
-治理委员资格被取消后，`GCT`自动失效。新增的治理委员，持有新的`GCT`。
+治理委员资格被取消后，`BCT`自动失效。新增的治理委员，持有新的`BCT`。
 
-治理委员代币名称：`GCT`（Govern Committee Token）
+治理委员代币名称：`BCT`（Govern Committee Token）
 
 初期节点治理委员会无需持币，随着`BTCH`产量增加，经`BTCH`持有人投票，可增加对节点治理委员持币量的要求。
 
