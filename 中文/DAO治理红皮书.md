@@ -1,3 +1,3 @@
 # DAO - REDPAPER
+# bitCheck治理方案
 
-## About Bitcheck DAO
