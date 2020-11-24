@@ -14,7 +14,7 @@
 ### `BTCH`持有人享有以下权利：
 
 * 持币人通过投票对区块链上的智能合约中的重要规则做调整。
-* 持币人通过投票，选举治理委员会，治理委员会行驶日常管理职能。
+* 持币人通过投票，选举超级节点，超级节点行驶日常管理职能。
 * 投票人通过投票，选举处理交易与支付争议的仲裁员50名。
 * 持币人通过投票，对挖矿奖励方案进行调整。
 * 持币人通过投票，对手续费，仲裁费等收入的分配方案进行调整。
@@ -26,7 +26,7 @@
 * 推广`bitCheck`应用，拓展担保支付场景，为`BTCH`赋能。
 
 ## 4 代币
-### 主币：`BTCH`
+### 4.1 主币：`BTCH`
 预售：0
 
 硬顶：3600万枚，ERC20（以太坊）
@@ -43,7 +43,7 @@ function mint(address account, uint256 amount) public onlyAuthorizedContract {
 
 总量与市场流通量从零开始，零预售，零预挖，零预发。
 
-### 仲裁委员代币：`ACT`
+### 4.2 仲裁委员代币：`ACT`
 每个被选出的仲裁委员拥有一个`NFT`（不可转让）代币，总量50枚，每个仲裁员一枚，用于对争议支付进行投票。仲裁委员资格被取消后，`NFT`自动失效。新增仲裁委员，持有新的`NFT`。
 
 仲裁委员代币名称：`ACT`（Arbitration Committee Token）
@@ -57,20 +57,29 @@ function mint(address account, uint256 amount) public onlyAuthorizedContract {
 
 每个纠纷会从`ACT`持有人中随机选出`5-7名`仲裁员，参与该案件的调查与仲裁。
 
-### 节点治理委员代币：`BCT`
-每位治理委员拥有一枚`BCT`（不可转让）代币，总量`21`枚，`BCT`持有人拥有以下权利：
+### 4.3 超级节点代币：`BCT`
+每个超级节点拥有一枚`BCT`（不可转让）代币，总量`21`枚，`BCT`持有人拥有以下权利：
 * 日常投票决策，通过率以具体提案为准。
-* 拥有`10倍`于常规挖矿的收益。为维护治理委员的可持续性与稳定性，挖出的`BTCH`将在180天内每日线性释放。
+* 在公测期内，每枚`BCT`拥有`5倍`于常规挖矿的收益。为维护超级节点的可持续性与稳定性，挖出的`BTCH`将在180天内每日线性释放。公测期为第一阶段前150万个`BTCH`。
+* 超级节点可以在DAPP中自行设定付款方与收款方获得挖矿奖励的比例。
 
-产生方式：由现任委员提名，并经全体治理委员`4/5`以上（含）赞成，或者占投票开始时刻`2/3`以上`BTCH`赞成后，产生新的委员。
+超级节点作为支付方时，代币产出公式：
+```
+总产出 = 基础产出 * BCT数量 * 5
+付款方产出 = 总产出 * (1 - 矿税%) * 支付方比例%
+收款方产出 = 总产出 * (1 - 矿税%) * (1 - 支付方比例%)
+```
+其中基础产出见《5 挖矿奖励算法》 
 
-罢免方式：任何`BTCH`持有人都可提出罢免提案，经全体治理委员`4/5`以上赞成，或者占投票开始时刻`2/3`以上`BTCH`赞成，罢免提案生效。
+产生方式：由现任超级节点提名，并经全体超级节点`4/5`以上（含）赞成，或者占投票开始时刻`2/3`以上`BTCH`赞成后，产生新的超级节点。
 
-治理委员资格被取消后，`BCT`自动失效。新增的治理委员，持有新的`BCT`。
+罢免方式：任何`BTCH`持有人都可提出罢免提案，经全体超级节点`4/5`以上赞成，或者占投票开始时刻`2/3`以上`BTCH`赞成，罢免提案生效。
 
-治理委员代币名称：`BCT`（Govern Committee Token）
+超级节点资格被取消后，`BCT`自动失效。新增的超级节点，持有新的`BCT`。
 
-初期节点治理委员会无需持币，随着`BTCH`产量增加，经`BTCH`持有人投票，可增加对节点治理委员持币量的要求。
+超级节点代币名称：`BCT`（Bitcheck Committee Token）
+
+初期超级节点会无需持币抵押，随着`BTCH`产量增加，经`BTCH`持有人投票，可增加对超级节点持币量的要求。
 
 
 ## 5 挖矿奖励算法
@@ -127,7 +136,7 @@ function mint(address account, uint256 amount) public onlyAuthorizedContract {
 
    This factor will be modified by council according to the market.
 
-   时间差系数由治理委员会根据市场情况进行调节。
+   时间差系数由超级节点根据市场情况进行投票调节。
 
  * 4- Stage factor: If total mint token is 300,000, we will devided it into several stages. Each stage has special bonus times. Ex. if stage factor is 5, means in this stage, miner will get 5 times than normal.
   
@@ -181,8 +190,8 @@ function mint(address account, uint256 amount) public onlyAuthorizedContract {
    * 金额越小，年化收益（APY）越高，手续费率也越高
     
 
-## 6 规则治理与调整
-作为一个基于`DAO`治理的担保支付系统，与运营相关的系数皆由治理委员会进行投票后，在智能合约中调整。
+## 6 规则的治理与调整
+作为一个基于`DAO`治理的担保支付系统，与运营相关的系数皆由超级节点进行投票后，在智能合约中调整。
 
 可调整的规则参数如下：
 
@@ -203,9 +212,12 @@ function mint(address account, uint256 amount) public onlyAuthorizedContract {
 |仲裁固定费用|councilJudgementFee|提交仲裁委员会仲裁的最低收费|0|同以太坊|
 |仲裁比例费用|councilJudgementFeeRate|提交仲裁委员会仲裁的收费比例|17%|同以太坊|
 |付款人挖矿奖励占比|depositerShareRate|即扣除矿税后，付款人获得的奖励比例，余下的给收款人|50%|同以太坊|
+|BCT超级节点挖矿乘数|bctHolderMultiplier|BCT超级节点是基础产出的倍数|5||
+|BCT超级节点公测期挖矿总量|bctHolderSpecialTotalSupply|BCT超级节点公测期挖矿总量|1500000||
 |矿税收取地址|taxBereauAddress|即矿税将打入该地址|||
 |默认收取手续费地址|commonWithdrawAddress|对于未指定支付网关的支付，手续费打到这个账户|||
-|治理委员会地址|councilAddress|该地址交给Aragon配置的投票委员会决策|||
+|超级节点投票地址|councilAddress|该地址交给Aragon配置的超级节点投票委员会决策|||
+
 
 ## 7 BTCH基础价值
 BTCH的基础价值来源于其收入模型，BTCH有以下几部分收入：
