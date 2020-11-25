@@ -50,5 +50,5 @@ bitCheck提供了支付底层，所有有支付业务场景以及担保支付需
 ### bitCheck支持隐私交易吗?
 bitCheck有支持zk的版本，使用zksnarks技术和merkle树，实现隐私交易，使得交易记录全部隐私。除了zk版本外，核心版本使用了全新的hashkey技术，在无需使用高消耗的zksnarks技术下，实现收付款的隐私交易。
 
-### 如何参与bitCheck支付挖矿?
-请参考《BTCH挖矿绿皮书》
+### 如何参与bitCheck挖矿?
+请参考《经济模型绿皮书》与《挖矿与分红常见问题FAQ》
