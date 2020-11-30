@@ -1,4 +1,4 @@
-## bitCheck挖矿使用手册
+## bitCheck挖矿(Yield Farming)使用手册
 
 `bitCheck`只在以太坊上有挖矿。
 
